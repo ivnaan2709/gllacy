@@ -57,7 +57,7 @@
 
                 <div class="personal-office">
                     <ul>
-                        <li><a>Личный кабинет</a></li>
+                        <li><a href="personal_account.php">Личный кабинет</a></li>
                         <li><a>Покупки</a></li>
                         <li><a href="?do=exit">Выход</a></li>
                     </ul>

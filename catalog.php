@@ -149,6 +149,7 @@ $goods = get_produts();
             </div>
 
             <div class="product-items">
+
                 <?php foreach ($goods as $product): ?>
                   <div class="product-item">
                     <div class="product-item-bg"></div>
@@ -157,7 +158,7 @@ $goods = get_produts();
                       <p class="item-price"><?= htmlspecialchars($product['price']); ?> ₴/кг</p>
                       <p class="item-name"><?= htmlspecialchars($product['name']); ?></p>
                     </div>
-                    <a class="btn">Быстрый просмотр</a>
+                    <a class="btn" href="goods.php?product_id=<?= htmlspecialchars($product['id_product']); ?>">Быстрый просмотр</a>
                   </div>
                 <?php endforeach; ?>
             </div>
@@ -165,63 +166,7 @@ $goods = get_produts();
       </main>
 
 
-
-      <footer class="main-footer">
-        <div class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-inst" href="#">Instagram</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-vk" href="#">Vk</a>
-        </div>
-        <div class="footer-info">
-          <ul>
-            <li><a class="suppliers" href="#" >Для поставщиков</a></li>
-            <li><a href="#">О производстве</a></li>
-            <li><a href="#">Наши документы</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
-          </ul>
-        </div>
-        <div class="footer-copyright">
-          Сделано в <span>HTML Academy</span> © 2017
-        </div>
-      </footer>
-
-      <div class="search-modal">
-        <form class="search-form">
-          <label class="search-label">Поиск</label>
-          <input type="text" name="search" class="search-input" placeholder="Что ищем?">
-        </form>
-      </div>
-
-      <div class="login-modal">
-        <form class="login-form">
-          <input type="text" name="email" placeholder="Электронная почта">
-          <input type="password" name="password" placeholder="Пароль">
-          <div class="auth-group">
-            <button class="btn" type="submit">Войти</button>
-            <div>
-              <a class="restore" href="#">Забыли пароль?</a>
-              <a class="registration" href="#">Новая регистрация</a>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div class="feedback-modal">
-        <button class="feedback-modal-close" type="button" title="Close">Close</button>
-        <span>Мы обязательно вам ответим!</span>
-        <form class="feedback-form" method="post">
-          <label for="name">Как вас зовут?</label>
-          <input type="text" name="name" id="name" placeholder="Как вас зовут?">
-          <label for="email">Ваша почта для ответа?</label>
-          <input type="text" name="email" id="email" placeholder="Ваша почта для ответа?">
-          <label for="message">Напишите что-нибудь...</label>
-          <textarea name="message" id="message" cols="num" rows="num" placeholder="Напишите что-нибудь..."></textarea>
-          <button class="btn">Отправить</button>
-        </form>
-      </div>
-
-      <div class="modal-overlay"></div>
+        <?php require_once __DIR__ . '/footer.php'; ?>
 
     </div>
 

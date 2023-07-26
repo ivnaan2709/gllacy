@@ -30,9 +30,7 @@ require_once __DIR__ . '/func_users.php';
     <div class="site-wrapper">
         <div class="content-wrapper">
 
-            <?php require_once __DIR__ . '/header.php';
-
-            ?>
+            <?php require_once __DIR__ . '/header.php'; ?>
 
             <main class="container">
 
@@ -171,25 +169,7 @@ require_once __DIR__ . '/func_users.php';
                 </div>
             </section>
 
-            <footer class="main-footer">
-                <div class="footer-social">
-                    <a class="social-btn social-btn-tw" href="#">Twitter</a>
-                    <a class="social-btn social-btn-inst" href="#">Instagram</a>
-                    <a class="social-btn social-btn-fb" href="#">Facebook</a>
-                    <a class="social-btn social-btn-vk" href="#">Vk</a>
-                </div>
-                <div class="footer-info">
-                    <ul>
-                       <li><a class="suppliers" href="#" >Для поставщиков</a></li>
-                       <li><a href="#">О производстве</a></li>
-                       <li><a href="#">Наши документы</a></li>
-                       <li><a href="#">Экологические стандарты</a></li>
-                    </ul>
-                </div>
-                <div class="footer-copyright">
-                    Сделано в <span>HTML Academy</span> © 2017
-                </div>
-            </footer>
+            <?php require_once __DIR__ . '/footer.php'; ?>
 
             <div class="feedback-modal">
                 <button class="feedback-modal-close" type="button" title="Close">Close</button>
