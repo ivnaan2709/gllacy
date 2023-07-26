@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-heart {
+    width: 15px;
+    height: 13px;
+    background-position: -10px -10px;
+}
+
+.sprite-icon-basket {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -43px;
+}
+
+.sprite-icon-cow {
+    width: 48px;
+    height: 49px;
+    background-position: -10px -83px;
+}
+
+.sprite-icon-fb {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -152px;
+}
+
+.sprite-icon-ice-cream {
+    width: 49px;
+    height: 49px;
+    background-position: -10px -204px;
+}
+
+.sprite-icon-insta {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -273px;
+}
+
+.sprite-icon-leaf {
+    width: 49px;
+    height: 49px;
+    background-position: -10px -325px;
+}
+
+.sprite-icon-login {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -394px;
+}
+
+.sprite-icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -433px;
+}
+
+.sprite-icon-thermometer {
+    width: 48px;
+    height: 49px;
+    background-position: -10px -470px;
+}
+
+.sprite-icon-tw {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -539px;
+}
+
+.sprite-icon-vk {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -591px;
+}
