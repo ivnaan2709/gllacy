@@ -30,7 +30,7 @@ require_once __DIR__ . '/func_users.php';
     <div class="site-wrapper">
         <div class="content-wrapper">
 
-            <?php require_once __DIR__ . '/header.php'; ?>
+            <?php require_once __DIR__ . '/widget/header.php'; ?>
 
             <main class="container">
 
@@ -169,7 +169,7 @@ require_once __DIR__ . '/func_users.php';
                 </div>
             </section>
 
-            <?php require_once __DIR__ . '/footer.php'; ?>
+            <?php require_once __DIR__ . '/widget/footer.php'; ?>
 
             <div class="feedback-modal">
                 <button class="feedback-modal-close" type="button" title="Close">Close</button>
@@ -190,7 +190,7 @@ require_once __DIR__ . '/func_users.php';
         </div>
     </div>
 
-    <?php require_once __DIR__ . '/modal.php'; ?>
+    <?php require_once __DIR__ . '/widget/modal.php'; ?>
 
     <script src="js/script.js"></script>
 

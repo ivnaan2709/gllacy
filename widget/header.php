@@ -57,7 +57,7 @@
 
                 <div class="personal-office">
                     <ul>
-                        <li><a href="personal_account.php">Личный кабинет</a></li>
+                        <li><a href="../personal_account.php">Личный кабинет</a></li>
                         <li><a>Покупки</a></li>
                         <li><a href="?do=exit">Выход</a></li>
                     </ul>
@@ -65,31 +65,17 @@
             </div>
 
             <div class="basket-block user-element">
-                <a class="basket">Корзина</a>
+                <a class="basket">
+                    <?php
+                    if (isset($_SESSION['basket']) && is_array($_SESSION['basket'])) {
+                        $count = count($_SESSION['basket']);
+                        echo $count." товаров";
 
-                <div class="basket-modal">
-                    <div class="basket-modal-content">
-                        <div class="basket-products-list">
-                            <div class="basket-product-item">
-                                <button class="basket-product-delete" type="button" title="Close">Close</button>
-                                <img src="img/product-img/1.png">
-                                <p class="basket-product-name">Пломбир с апельсиновым джемом</p>
-                                <p class="basket-product-weight">1,5 кг x <b>200 грн.</b></p>
-                                <p class="basket-product-price">300 грн.</p>
-                            </div>
-
-                            <div class="basket-product-item">
-                                <button class="basket-product-delete" type="button" title="Close">Close</button>
-                                <img src="img/product-img/3.png">
-                                <p class="basket-product-name">Клубничный пломбир с присыпкой из белого шоколада</p>
-                                <p class="basket-product-weight">1,5 кг x <b>300 грн.</b></p>
-                                <p class="basket-product-price">450 грн.</p>
-                            </div>
-                        </div>
-                        <p class="basket-sum">Итого: <b>750 грн.</b></p>
-                        <a class="btn"> Оформить заказ</a>
-                    </div>
-                </div>
+                    } else {
+                        echo 'Корзина';
+                    }
+                    ?></a>
+                <?php require_once __DIR__ . "/basket-modal.php" ?>
             </div>
 
         </div>

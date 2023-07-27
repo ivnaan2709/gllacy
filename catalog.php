@@ -32,14 +32,14 @@ $goods = get_produts();
 
     <div class="content-wrapper">
 
-        <?php require_once __DIR__ . '/header.php';  ?>
+        <?php require_once __DIR__ . '/widget/header.php';  ?>
 
         <main class="container">
 
             <div class="inner-page-title">
               <ul class="breadcrumbs">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="catalog.php">Каталог</a></li>
                 <li>Сливочное</li>
               </ul>
               <h1>Сливочное мороженое</h1>
@@ -166,11 +166,11 @@ $goods = get_produts();
       </main>
 
 
-        <?php require_once __DIR__ . '/footer.php'; ?>
+        <?php require_once __DIR__ . '/widget/footer.php'; ?>
 
     </div>
 
-    <?php require_once __DIR__ . '/modal.php'; ?>
+    <?php require_once __DIR__ . '/widget/modal.php'; ?>
     <script src="js/script.js"></script>
 
 
